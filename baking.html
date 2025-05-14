@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Baking Corner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Baking Corner</h1>
+	<nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="baking.html">Baking Corner</a></li>
+        <li><a href="art.html">Art Corner</a></li>
+        <li><a href="sewing.html">Sewing & Crocheting</a></li>
+        <li><a href="nails.html">Nail Art Corner</a></li>
+      </ul>
+    </nav>
+    <p><strong>Cozy recipes, straight from my kitchen</strong> 🧁</p>
+  </header>
+
+  <main>
+    <!-- Cookie Recipe -->
+    <section class="recipe">
+      <h2>Chocolate Chip Cookies</h2>
+
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>1 stick of butter (warm, not melted)</li>
+        <li>1 cup dark brown sugar</li>
+        <li>1 cup granulated sugar</li>
+        <li>2 eggs</li>
+        <li>1 tbsp vanilla extract</li>
+        <li>3 cups flour</li>
+        <li>1 tsp baking soda</li>
+        <li>1/2 tsp baking powder</li>
+        <li>1 1/2 tsp salt</li>
+        <li>~2 cups chocolate chips (add as much as you want!)</li>
+      </ul>
+
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Preheat the oven to 375°F.</li>
+        <li>Mix the warm butter with both sugars in a bowl until clumpy.</li>
+        <li>Add eggs and vanilla; mix until smooth.</li>
+        <li>Add the dry ingredients and mix well to form the dough.</li>
+        <li>Stir in chocolate chips, then roll dough into balls and place on a parchment-lined baking sheet.</li>
+        <li>Bake for 15 minutes. Cool or enjoy fresh from the oven!</li>
+      </ol>
+
+      <img src="Cookies.jpg" alt="Cookies.jpg" class="recipe-img" />
+    </section>
+
+    <!-- Cinnamon Roll Recipe -->
+    <section class="recipe">
+      <h2>Homemade Cinnamon Rolls</h2>
+
+      <h3>Dough:</h3>
+      <ul>
+        <li>2 cups flour</li>
+        <li>2 1/4 tsp baking powder</li>
+        <li>3 tbsp granulated sugar</li>
+        <li>1/2 tsp cinnamon</li>
+        <li>1/2 tsp salt</li>
+        <li>3/4 cup milk</li>
+        <li>3 tbsp butter</li>
+      </ul>
+
+      <h3>Filling:</h3>
+      <ul>
+        <li>1/2 cup light brown sugar</li>
+        <li>2 1/2 tsp cinnamon</li>
+        <li>1 tbsp butter (melted)</li>
+      </ul>
+
+      <h3>Frosting:</h3>
+      <ul>
+        <li>4 oz cream cheese</li>
+        <li>4 tbsp butter</li>
+        <li>1 tsp vanilla extract</li>
+        <li>3/4 cup confectioners sugar</li>
+      </ul>
+
+      <h3>Instructions:</h3>
+      <ol>
+        <li>Microwave milk and butter together, then mix with dry dough ingredients in a large bowl.</li>
+        <li>Knead gently, cover with a damp towel, and let rest for 15 minutes.</li>
+        <li>Meanwhile, preheat oven to 350°F, grease your baking pan, and mix the filling ingredients.</li>
+        <li>Roll out dough on a floured surface, spread the filling, then roll it up and slice into rolls.</li>
+        <li>Place rolls in the pan and bake for 25–30 minutes until golden.</li>
+        <li>While baking, heat the frosting ingredients slightly and mix well.</li>
+        <li>Frost the rolls after baking and enjoy warm!</li>
+      </ol>
+
+      <img src="cinnamon_roll.jpg" alt="Cinnamon_roll.jpg" class="recipe-img" />
+    </section>
+
+    <!-- Oreo Mug Cake -->
+    <section class="recipe">
+      <h2>Oreo Mug Cake (Beginner-Friendly Treat)</h2>
+
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>5 Oreo cookies</li>
+        <li>1/4 cup milk</li>
+        <li>1 tbsp granulated sugar</li>
+        <li>1 tbsp flour</li>
+        <li>1/2 tsp baking powder</li>
+        <li>1 tsp cocoa powder</li>
+      </ul>
+
+      <h3>Instructions:</h3>
+      <ol>
+        <li>In a mug, crush 4 Oreos into the milk until chunky and chocolatey.</li>
+        <li>Add sugar, flour, baking powder, and cocoa powder. Mix thoroughly.</li>
+        <li>Press the 5th Oreo into the center of the batter.</li>
+        <li>Microwave for 90 seconds. Let cool before enjoying!</li>
+      </ol>
+
+      <img src="Oreo_mugcake.jpg" alt="Oreo_mugcake.jpg" class="recipe-img" />
+    </section>
+	 <section class="tips">
+        <h3>Baking Tips</h3>
+        <ul>
+          <li>Use room temperature ingredients for smoother mixing and better texture.</li>
+          <li>Always preheat your oven before baking — timing and temperature matter!</li>
+          <li>Don't overmix your dough, especially for cookies and cakes, or it may become tough.</li>
+          <li>Let your baked goods cool before applying frosting or cutting.</li>
+          <li>Test your baked goods with a toothpick—if it comes out clean, it’s done!</li>
+        </ul>
+      </section>
+
+      <section>
+      <h2>Share Your Thoughts!</h2>
+      <form id="nailCommentForm">
+        <label for="comment">Leave a comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type your thoughts here..."></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="thankYouMessage" style="display:none; font-weight: bold; color: #5a5;">Thanks for your comment! 🧁</p>
+
+      <script>
+        document.getElementById("nailCommentForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          this.reset();
+          document.getElementById("thankYouMessage").style.display = "block";
+        });
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Creative Square. Created by Bryanna Wilson.</p>
+  </footer>
+</body>
+</html>

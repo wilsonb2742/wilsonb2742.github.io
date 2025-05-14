@@ -1,0 +1,55 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf7f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffb6b9;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+</section>
+.creative-challenge {
+  background-color: #fff8f2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.creative-challenge h2 {
+  margin-bottom: 0.5rem;
+}
+    <section>
+footer {
+  background-color: #ffb6b9;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}

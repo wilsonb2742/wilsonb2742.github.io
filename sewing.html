@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sewing & Crocheting Corner</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .tools-section img {
+      width: 100px;
+      margin: 10px;
+    }
+
+    .projects img {
+      width: 200px;
+      border-radius: 8px;
+      margin: 10px;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>The Sewing & Crocheting Corner</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="baking.html">Baking Corner</a></li>
+        <li><a href="art.html">Art Corner</a></li>
+        <li><a href="sewing.html">Sewing & Crocheting</a></li>
+        <li><a href="nails.html">Nail Art Corner</a></li>
+      </ul>
+    </nav>
+	<p><strong>Creating magic, one stitch at a time 🧵</strong></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Fabric Types & Their Uses</h2>
+      <table>
+        <tr>
+          <th>Fabric Type</th>
+          <th>Best Uses</th>
+        </tr>
+        <tr>
+          <td>Cotton</td>
+          <td>Breathable and easy to sew; great for clothing and quilting.</td>
+        </tr>
+        <tr>
+          <td>Fleece</td>
+          <td>Warm and soft; perfect for blankets and winter wear.</td>
+        </tr>
+        <tr>
+          <td>Linen</td>
+          <td>Lightweight and airy; great for summer clothes and decor.</td>
+        </tr>
+        <tr>
+          <td>Canvas</td>
+          <td>Durable and thick; ideal for bags, upholstery, and accessories.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="tools-section">
+      <h2>Essential Tools</h2>
+      <ul>
+        <li>Scissors <img src="scissors.jpg" alt="Scissors"></li>
+        <li>Measuring Tape <img src="M_tape.jpg" alt="Measuring Tape"></li>
+        <li>Sewing Machine <img src="Machine.jpg" alt="Sewing Machine"></li>
+        <li>Yarn & Hook
+  <div style="display: flex; gap: 10px; align-items: center;">
+    <img src="hook.jpg" alt="Hook">
+    <img src="yarn.jpg" alt="Yarn">
+  </div>
+</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Project Ideas</h2>
+      <p>Get inspired with these beginner and advanced ideas:</p>
+      <ul>
+        <li>Simple tote bag</li>
+        <li>Granny square blanket</li>
+        <li>Drawstring pouch</li>
+        <li>Bucket hat</li>
+      </ul>
+    </section>
+
+    <section class="video-section">
+      <h2>Beginner-Friendly Videos</h2>
+  <iframe src="https://www.youtube.com/embed/oD_KpZm7OaM" title="Beginner Sewing Video 1" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/7zlOOv_vG84" title="Beginner Sewing Video 2" allowfullscreen></iframe>
+</section>
+
+    <section>
+      <h2>Share Your Thoughts!</h2>
+      <form id="sewingCommentForm">
+        <label for="comment">Leave a comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type your thoughts here..."></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="thankYouMessage" style="display:none; font-weight: bold; color: #5a5;">Thanks for your comment! 🧵</p>
+
+      <script>
+        document.getElementById("sewingCommentForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          this.reset();
+          document.getElementById("thankYouMessage").style.display = "block";
+        });
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Creative Square. Created by Bryanna Wilson.</p>
+  </footer>
+</body>
+
+</html>

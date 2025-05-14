@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art Corner</title>
+    <link rel="stylesheet" href="style.css">
+	 <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+  .grayscale-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .grayscale-gallery img {
+      width: 30%;
+      border-radius: 8px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <h1>The Art Corner</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="baking.html">Baking Corner</a></li>
+                <li><a href="art.html">Art Corner</a></li>
+                <li><a href="sewing.html">Sewing & Crocheting</a></li>
+                <li><a href="nails.html">Nail Art Corner</a></li>
+            </ul>
+        </nav>
+		<p><strong>Glimpses into the world of digital art🖌️</strong></p>
+    </header>
+
+    <main>
+        
+        <section class="art-gallery">
+            <h2>Some of my works:</h2>
+      <div class="gallery-grid">
+        <img src="drawing_1.jpg" alt="Drawing 1">
+        <img src="drawing_2.jpg" alt="Drawing 2">
+        <img src="drawing_3.jpg" alt="Drawing 3">
+        <img src="drawing_4.jpg" alt="Drawing 4">
+      </div>
+        </section>
+
+        <section class="shading-section">
+  <h2>Shading! The Greatest Ally and Enemy Wrapped Up in One 🎨</h2>
+  <p>Shading in digital art can make or break your piece—it’s what gives your work depth, emotion, and a sense of realism. But let’s be honest: it’s also one of the trickiest things to master. Whether you’re battling muddy shadows or overblown highlights, we’ve all been there. In this section, I’ll share my own basic shading tips.</p>
+
+  <ol>
+    <li>
+      <strong>Using a reference</strong> – it’s not cheating! You're learning and storing into your memory bank for later and that’s okay!
+	Pinterest is a great reference search engine!
+    </li>
+
+    <li>
+      <strong>Starting from grayscale</strong> – this makes it easier to create the different values without getting caught up in the colors.
+      <br>
+          <div class="grayscale-gallery">
+            <img src="grayscale1.jpg" alt="Grayscale drawing 1">
+            <img src="grayscale2.jpg" alt="Grayscale drawing 2">
+            <img src="grayscale3.jpg" alt="Grayscale drawing 3">
+          </div>
+    </li>
+
+    <li>
+      <strong>Put down the airbrush!</strong> – Shadows/lights are not always soft; without the hard lines your picture can become flat. PS. shading with black or gray is ok in grayscale but not on actual colors- it looks muddy!
+      <br>
+      <div style="display: flex; gap: 10px; margin-top: 8px;">
+        <img src="airbrush.jpg" alt="Soft airbrush shading" style="width: 48%;">
+      </div>
+    </li>
+
+    <li>
+      <strong>Play with the layer modes!</strong> – When transitioning from grayscale to color, different modes can create different color effects on your drawing.
+  <div style="margin-top: 10px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cMXvO9JHaCw" 
+      title="YouTube video player 1" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uUpJ5KnisVk" 
+      title="YouTube video player 2" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+  </div>
+	</li>
+  </ol>
+</section>
+<section>
+      <h3>🎨 What's Your Art Style?</h3>
+      <p>Everyone’s got a vibe! Pick the one that fits you best and see what it says about your creative energy.</p>
+
+      <form id="artStyleForm">
+        <p>Select the option that feels the most like you:</p>
+        <label><input type="radio" name="style" value="Realism"> Realism</label><br>
+        <label><input type="radio" name="style" value="Cartoon"> Cartoon</label><br>
+        <label><input type="radio" name="style" value="Anime"> Anime</label><br>
+        <label><input type="radio" name="style" value="Abstract"> Abstract</label><br>
+        <label><input type="radio" name="style" value="I don't know yet"> I don't know yet</label><br><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="styleThankYouMessage" style="display:none; font-weight: bold; color: #5a5;">Thanks for submitting! 😊</p>
+
+      <script>
+        document.getElementById("artStyleForm").addEventListener("submit", function (e) {
+          e.preventDefault(); // stop the page from refreshing
+          this.reset(); // clears the form inputs
+          document.getElementById("styleThankYouMessage").style.display = "block"; // show the thank-you
+        });
+      </script>
+    </section>
+
+    <p id="artStyleResult" style="font-weight: bold; margin-top: 10px;"></p>
+
+    <section>
+      <h2>Share Your Thoughts!</h2>
+      <form id="nailCommentForm">
+        <label for="comment">Leave a comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type your thoughts here..."></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="commentThankYouMessage" style="display:none; font-weight: bold; color: #5a5;">Thanks for your comment! 🎨</p>
+
+      <script>
+        document.getElementById("nailCommentForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          this.reset();
+          document.getElementById("commentThankYouMessage").style.display = "block";
+        });
+      </script>
+    </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 The Creative Square. Created by Bryanna Wilson.</p>
+  </footer>
+</body>
+
+</html>
